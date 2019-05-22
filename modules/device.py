@@ -1,5 +1,9 @@
 #coding=utf-8
-def find_keyboard_devices(**args):
+import os
+import sys
+# linux下的系统输入设备信息目录
+DEVICES_PATH = '/sys/class/input/'
+def run(**args):
     """
         找出所有的键盘设备名
     """
