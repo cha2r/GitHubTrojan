@@ -1,5 +1,5 @@
 #coding=utf-8
-def find_keyboard_devices(device_filter_func):
+def find_keyboard_devices(**args):
     """
         找出所有的键盘设备名
     """
