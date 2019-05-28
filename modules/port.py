@@ -8,9 +8,9 @@ def run(**args):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex(('127.0.0.1', index))
         if result == 0:
-            temp = "Port %d is open" % index
+            temp = "Port %d is open\n" % index
         else:
-            temp = "Port %d is not open" % index
+            temp = "Port %d is not open\n" % index
         sock.close()
     return str(temp)
 
