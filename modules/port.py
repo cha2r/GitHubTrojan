@@ -1,9 +1,8 @@
 #!/usr/bin/python
 #coding=utf-8
-
 import socket
 
-port_number = [135,443,80,8080,4396]
+port_number = [135,443,80]
 def run(**args):
     for index in port_number:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -13,4 +12,4 @@ def run(**args):
         else:
             print("Port %d is not open" % index)
         sock.close()
-        return str(result)
+    return str(result)
