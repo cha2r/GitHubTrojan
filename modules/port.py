@@ -1,6 +1,6 @@
 #coding=utf-8
 import socket
-temp = ()
+temp = []
 port_number = [135,443,80]
 def run(**args):
     for index in port_number:
