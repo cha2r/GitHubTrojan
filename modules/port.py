@@ -11,7 +11,7 @@ def run(**args):
                 file  = "Port %d is open\n" % index
         else:
                 file = "Port %d is not open\n" % index
-        temp = temp.append(file)
+        temp.append(file)
         
         sock.close()
     
