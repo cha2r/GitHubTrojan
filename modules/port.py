@@ -1,9 +1,9 @@
 #coding=utf-8
 import socket
-temp = []
+
 port_number = [135,443,80]
 def run(**args):
-    global temp
+    temp=[]
     for index in port_number:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex(('127.0.0.1', index))
