@@ -1,9 +1,9 @@
 #coding=utf-8
 
 from  subprocess  import  Popen, PIPE
-import os 
+import os
 
-def  run(**args):
+def run(**args):
     print "[*]Now in dmidecode module."
     p = Popen(['dmidecode'], stdout=PIPE, stderr=PIPE)
     data = p.stdout.read()
